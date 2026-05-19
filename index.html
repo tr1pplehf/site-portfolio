@@ -13,7 +13,7 @@
   ></script>
 </head>
 <body>
-<header class="header">
+<header class="header" data-js-overlay-menu>
   <div class="header__inner container">
     <a
       class="header__logo logo"
@@ -46,8 +46,8 @@
         </g>
       </svg>
     </a>
-    <dialog class="header__overlay-menu-dialog">
-      <nav class="header__menu hidden-mobile">
+    <dialog class="header__overlay-menu-dialog" data-js-overlay-menu-dialog>
+      <nav class="header__menu">
         <ul class="header__menu-list">
           <li class="header__menu-item">
             <a
@@ -85,7 +85,7 @@
       </nav>
     </dialog>
     <div class="header__wrapper">
-    <label class="header__theme-switcher theme-switcher">
+    <label class="header__theme-switcher theme-switcher" title="Switch theme">
       <span class="visually-hidden">Switch theme</span>
       <input
         class="theme-switcher__checkbox visually-hidden"
@@ -118,10 +118,11 @@
         </span>
     </label>
     <button
-      class="burger-button visible-mobile"
+      class="header__burger-button burger-button visible-mobile"
       type="button"
       aria-label="Open mobile menu"
       title="Open mobile menu"
+      data-js-overlay-menu-burger-button
     >
       <svg
         class="burger-button__svg"
@@ -146,5 +147,6 @@
     </div>
   </div>
 </header>
+
 </body>
 </html>

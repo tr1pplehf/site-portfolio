@@ -1,2 +1,5 @@
+import OverlayMenu from '@/modules/OverlayMenu'
 import "@/styles/styles.scss"
-console.log('Hello world')
+
+
+new OverlayMenu()

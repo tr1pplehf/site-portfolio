@@ -3,17 +3,20 @@
   --iconWrapperWidth: 42px;
   --iconSize: 24px;
 
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   border-radius: 60px;
   box-shadow: var(--box-shadow);
 
-
+  @include hover {
+    border-color: var(--color-secondary);
+  }
 
   &__body {
     position: relative;
     display: flex;
     align-items: center;
     column-gap: var(--padding);
+    padding: var(--padding);
     border-radius: inherit;
 
     &::after {
