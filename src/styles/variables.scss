@@ -1,0 +1,25 @@
+:root {
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+
+  --color-primary: #E491C9;
+  --color-secondary: #982598;
+  --color-accent: #F1E9E9;
+  --color-background: #15173D;
+
+  --border: 1px solid var(--color-accent);
+
+  --box-shadow: -4px -4px 12px hsla(0, 0%, 100%, .05), 4px 4px 12px var(--color-black);
+
+  --font-family-base: 'Nunito', sans-serif;
+
+  --container-width: #{fluid-to-laptop($container-desktop-width, $container-laptop-width)};
+  --container-padding-x: 16px;
+
+  --section-padding-y: #{fluid(75, 40)};
+
+  --field-padding-x: #{fluid-to-laptop(20, 16)};
+
+  --transition-duration: 0.2s;
+  --transition-duration-longer: 0.4s;
+}

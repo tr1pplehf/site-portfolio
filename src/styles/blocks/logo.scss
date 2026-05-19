@@ -1,0 +1,12 @@
+.logo {
+  --logoSize: #{fluid(64, 48)};
+
+  @include hover {
+    color: var(--color-primary);
+  }
+
+  svg {
+    width: var(--logoSize);
+    height: var(--logoSize);
+  }
+}

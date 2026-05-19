@@ -1,0 +1,12 @@
+@import
+  'normalize',
+  'variables',
+  'fonts',
+  'utils',
+  'globals';
+
+@import './blocks/header';
+@import './blocks/logo';
+@import './blocks/theme-switcher';
+@import './blocks/burger-button';
+@import './blocks/mobile-menu';

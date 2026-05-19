@@ -1,0 +1,45 @@
+.header {
+  padding-block: fluid(20, 10);
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  &__wrapper {
+    @include mobile-above {
+      display: contents;
+    }
+
+    @include mobile {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+
+  &__menu {
+    &-list {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    &-link {
+      font-weight: 300;
+      color: var(--color-accent);
+
+      @include hover {
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  &__overlay-menu-dialog {
+    @include mobile-above {
+      display: contents;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  background-color: #d3d396;
+
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}
