@@ -1,0 +1,32 @@
+.footer {
+  padding-block: fluid(20, 10);
+  color: var(--color-accent);
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    column-gap: 10px;
+    font-size: 16px;
+
+    &-link {
+      @include hover {
+        color: var(--color-black-10);
+      }
+
+      &:nth-child(2) {
+        padding-inline: 10px;
+        border-inline: var(--border-transparent);
+      }
+    }
+  }
+}
