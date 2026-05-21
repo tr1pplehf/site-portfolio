@@ -1,5 +1,12 @@
 .header {
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  width: 100%;
   padding-block: fluid(20, 10);
+  border-bottom: 1px solid rgb(0 0 0 / 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 
   &__inner {
     display: flex;
@@ -8,38 +15,27 @@
     column-gap: 10px;
   }
 
-  &__wrapper {
-    @include mobile-above {
-      display: contents;
-    }
-
-    @include mobile {
-      display: flex;
-      align-items: center;
-      gap: 30px;
-    }
-  }
-
   &__menu {
     &-list {
       display: flex;
       align-items: center;
       gap: 40px;
 
-      @include mobile {
+      @include tablet{
         flex-direction: column;
       }
     }
 
     &-link {
       font-weight: 300;
-      color: var(--color-accent);
+      color: var(--color-black);
+      transition-duration: var(--transition-duration);
 
       @include hover {
-        color: var(--color-primary);
+        color: var(--color-accent);
       }
 
-      @include mobile {
+      @include tablet {
         font-size: 24px;
       }
     }
@@ -53,16 +49,32 @@
     width: 100%;
     height: 100%;
     padding: var(--container-padding-x);
-    background-color: var(--color-background);
+    background-color: var(--color-accent);
     border: none;
     z-index: 10;
 
-    @include mobile-above {
+    @include tablet-above {
       display: contents;
     }
 
     &[open] {
       display: flex;
+    }
+  }
+
+  &__wrapper {
+    @include tablet-above {
+      display: contents;
+    }
+
+    @include tablet {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    @include mobile {
+      gap: 15px;
     }
   }
 

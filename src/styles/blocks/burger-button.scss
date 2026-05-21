@@ -3,9 +3,9 @@
   @include square(51px);
 
   padding: 0;
-  background-color: var(--color-background);
-  border: 2px solid var(--color-accent);
-  border-radius: 4px;
+  background-color: inherit;
+  border: 2px solid var(--color-black);
+  border-radius: var(--border-radius-m);
 
   @include hover {
     background-color: var(--color-primary);
@@ -33,7 +33,7 @@
 
   &__line {
     fill: none;
-    stroke: var(--color-white);
+    stroke: var(--color-black);
     stroke-width: 6;
     stroke-linecap: round;
     stroke-dasharray: 60 207;

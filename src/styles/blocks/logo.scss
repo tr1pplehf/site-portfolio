@@ -1,12 +1,16 @@
 .logo {
-  --logoSize: #{fluid(64, 48)};
-
-  @include hover {
-    color: var(--color-primary);
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 4px;
+    font-size: fluid-to-laptop(20, 18);
+    font-weight: 600;
   }
 
-  svg {
-    width: var(--logoSize);
-    height: var(--logoSize);
+  &__initials {
+    padding: 4px;
+    border-radius: 8px;
+    background-color: var(--color-accent);
+    color: var(--color-white);
   }
 }

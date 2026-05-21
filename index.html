@@ -6,7 +6,11 @@
     name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
   >
-  <title>Danil Yakimenko - Frontend Developer.</title>
+  <title>Данил Якименко - Фронтенд разработчик.</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <script
     type="module"
     src="./src/main.js"
@@ -15,62 +19,40 @@
 <body>
 <header class="header" data-js-overlay-menu>
   <div class="header__inner container">
-    <a
-      class="header__logo logo"
-      href="/"
-      title="To home page"
-      aria-label="Home page"
-    >
-      <svg
-        width="64px"
-        height="64px"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        stroke="#ffffff"
+    <div class="header__logo logo">
+      <a
+        class="logo__link"
+        href="/"
       >
-        <g
-          id="SVGRepo_bgCarrier"
-          stroke-width="0"
-        />
-        <g
-          id="SVGRepo_tracerCarrier"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-        <g id="SVGRepo_iconCarrier">
-          <path
-            d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM8.53 13.47C8.82 13.76 8.82 14.24 8.53 14.53C8.38 14.68 8.19 14.75 8 14.75C7.81 14.75 7.62 14.68 7.47 14.53L5.47 12.53C5.18 12.24 5.18 11.76 5.47 11.47L7.47 9.47C7.76 9.18 8.24 9.18 8.53 9.47C8.82 9.76 8.82 10.24 8.53 10.53L7.06 12L8.53 13.47ZM13.69 9.96L11.69 14.63C11.57 14.91 11.29 15.08 11 15.08C10.9 15.08 10.8 15.06 10.71 15.02C10.33 14.86 10.15 14.42 10.32 14.03L12.32 9.36C12.48 8.98 12.92 8.8 13.3 8.97C13.68 9.14 13.85 9.58 13.69 9.96ZM18.53 12.53L16.53 14.53C16.38 14.68 16.19 14.75 16 14.75C15.81 14.75 15.62 14.68 15.47 14.53C15.18 14.24 15.18 13.76 15.47 13.47L16.94 12L15.47 10.53C15.18 10.24 15.18 9.76 15.47 9.47C15.76 9.18 16.24 9.18 16.53 9.47L18.53 11.47C18.82 11.76 18.82 12.24 18.53 12.53Z"
-            fill="#ffffff"
-          />
-        </g>
-      </svg>
-    </a>
+        <span class="logo__initials logo__initials--dark-bg">ЯД</span>
+        <span class="logo__name">Якименко Данил</span>
+      </a>
+    </div>
     <dialog class="header__overlay-menu-dialog" data-js-overlay-menu-dialog>
       <nav class="header__menu">
         <ul class="header__menu-list">
           <li class="header__menu-item">
             <a
               class="header__menu-link"
+              href="#main"
+            >
+              Главная
+            </a>
+          </li>
+          <li class="header__menu-item">
+            <a
+              class="header__menu-link"
+              href="#projects"
+            >
+              Проекты
+            </a>
+          </li>
+          <li class="header__menu-item">
+            <a
+              class="header__menu-link"
               href="#about"
             >
-              About
-            </a>
-          </li>
-          <li class="header__menu-item">
-            <a
-              class="header__menu-link"
-              href="#skills"
-            >
-              Skills
-            </a>
-          </li>
-          <li class="header__menu-item">
-            <a
-              class="header__menu-link"
-              href="#portfolio"
-            >
-              Portfolio
+              Обо мне
             </a>
           </li>
           <li class="header__menu-item">
@@ -78,7 +60,7 @@
               class="header__menu-link"
               href="#contacts"
             >
-              Contacts
+              Контакты
             </a>
           </li>
         </ul>
@@ -118,7 +100,7 @@
         </span>
     </label>
     <button
-      class="header__burger-button burger-button visible-mobile"
+      class="header__burger-button burger-button visible-tablet"
       type="button"
       aria-label="Open mobile menu"
       title="Open mobile menu"
@@ -147,6 +129,37 @@
     </div>
   </div>
 </header>
-
+<main class="content">
+<section class="hero section">
+  <div class="hero__inner container">
+    <div class="hero__info">
+      <span class="hero__tag tag">Frontend Developer</span>
+      <h1 class="hero__title">Привет! Я Данил</h1>
+      <div class="hero__description">
+        <p>Фронтенд разработчик, специализирующийся на создании современных веб-приложений с использованием React, TypeScript и Tailwind CSS.</p>
+      </div>
+      <div class="hero__actions">
+        <a
+          class="hero__actions-link button button--dark"
+          href="#projects"
+        >
+          <span class="icon icon--arrow-right">Посмотреть проекты</span>
+        </a>
+        <a
+          class="hero__actions-link button"
+          href="/"
+        >Связаться</a>
+      </div>
+    </div>
+    <img
+      class="hero__image"
+      src="./src/assets/images/hero/bg.jpg"
+      alt=""
+      width="710"
+      height="710"
+    />
+  </div>
+</section>
+</main>
 </body>
 </html>

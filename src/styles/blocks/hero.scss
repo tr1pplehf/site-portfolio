@@ -1,0 +1,19 @@
+.hero {
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: fluid-to-laptop(50, 20);
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__image {
+    width: 100%;
+//    max-width: 710px;
+    max-height: fluid(710, 390);
+    object-fit: cover;
+    border-radius: var(--border-radius-l)
+  }
+}

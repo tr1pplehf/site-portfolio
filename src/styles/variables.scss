@@ -1,13 +1,16 @@
 :root {
   --color-white: #FFFFFF;
   --color-black: #000000;
-
-  --color-primary: #E491C9;
-  --color-secondary: #982598;
-  --color-accent: #F1E9E9;
-  --color-background: #15173D;
+  --color-primary: #D9EAFD;
+  --color-secondary: #BCCCDC;
+  --color-accent: #9AA6B2;
+  --color-background: #F8FAFC;
 
   --border: 1px solid var(--color-accent);
+
+  --border-radius-l: 20px;
+  --border-radius-m: 10px;
+  --border-radius-s: 4px;
 
   --box-shadow: -4px -4px 12px hsla(0, 0%, 100%, .05), 4px 4px 12px var(--color-black);
 
