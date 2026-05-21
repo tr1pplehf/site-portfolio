@@ -36,7 +36,7 @@
     @include tablet {
       &:nth-child(odd):last-child {
         grid-column: -1 / 1;
-    }
+      }
     }
   }
 }
