@@ -18,8 +18,9 @@ main {
   flex-grow: 1;
 }
 
-.section {
+section {
   padding-block: var(--section-padding-y);
+  border-bottom: var(--border-transparent);
 }
 
 h1, .h1,

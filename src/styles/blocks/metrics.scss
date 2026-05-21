@@ -1,0 +1,25 @@
+.metrics {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+
+  &__value {
+    @include fluid-text(32, 24);
+
+    font-weight: 600;
+  }
+}
