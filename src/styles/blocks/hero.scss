@@ -17,10 +17,6 @@
     justify-self: start;
   }
 
-  &__title {
-    color: var(--color-black);
-  }
-
   &__actions {
     display: flex;
     column-gap: 14px;
@@ -28,7 +24,6 @@
 
   &__image {
     width: 100%;
-//    max-width: fluid(710, 390);
     max-height: fluid(710, 390);
     object-fit: cover;
     border-radius: var(--border-radius-l)

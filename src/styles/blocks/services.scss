@@ -1,0 +1,42 @@
+.services {
+  &__inner {
+    display: grid;
+    row-gap: fluid(40, 10);
+  }
+
+  &__header {
+    display: grid;
+    text-align: center;
+  }
+
+  &__description {
+    color: var(--color-accent);
+  }
+
+  &__list {
+    --columns: 3;
+
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    gap: fluid(20, 10);
+    height: 100%;
+
+    @include tablet {
+      --columns: 2;
+    }
+
+    @include mobile {
+      --columns: 1;
+    }
+  }
+
+  &__item {
+    height: 100%;
+
+    @include tablet {
+      &:nth-child(odd):last-child {
+        grid-column: -1 / 1;
+    }
+    }
+  }
+}

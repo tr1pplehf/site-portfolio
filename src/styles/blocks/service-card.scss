@@ -1,0 +1,23 @@
+.service-card {
+  display: grid;
+  row-gap: 14px;
+  height: 100%;
+  padding: fluid(24, 10);
+  border: var(--border-transparent);
+  border-radius: var(--border-radius-m);
+
+  &__image {
+    @include square(fluid(44, 34));
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background-color: var(--color-secondary);
+    border-radius: var(--border-radius-m);
+  }
+
+  &__description {
+    color: var(--color-accent);
+  }
+}
