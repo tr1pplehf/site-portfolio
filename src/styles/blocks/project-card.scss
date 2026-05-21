@@ -1,0 +1,36 @@
+.project-card {
+  display: grid;
+  row-gap: 30px;
+  padding: 20px;
+  border: var(--border-transparent);
+  border-radius: var(--border-radius-m);
+
+  &__image {
+    width: 100%;
+    height: fluid(320, 270);
+    object-fit: cover;
+    border-radius: inherit;
+  }
+
+  &__info {
+    display: grid;
+    row-gap: 14px;
+  }
+
+  &__technologies-list {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  &__actions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  &__button {
+    height: 32px;
+    justify-content: center;
+  }
+}
