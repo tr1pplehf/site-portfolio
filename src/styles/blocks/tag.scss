@@ -1,3 +1,8 @@
 .tag {
-  background-color: #9d8b8b;
+  background-color: var(--color-accent);
+  color: var(--color-background);
+  border-radius: var(--border-radius-s);
+  padding: 4px;
+  font-size: 14px;
+  font-weight: 600;
 }

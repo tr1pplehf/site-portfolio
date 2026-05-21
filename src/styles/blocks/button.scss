@@ -1,0 +1,18 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  padding: fluid(8,4) fluid(12, 8);
+  border: var(--border);
+  border-radius: var(--border-radius-m);
+  text-align: center;
+  font-weight: 300;
+
+  @include hover {
+    background-color: var(--color-accent);
+  }
+
+  &--dark {
+    background-color: var(--color-black);
+    color: var(--color-white);
+  }
+}

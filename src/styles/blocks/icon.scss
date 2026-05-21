@@ -1,0 +1,27 @@
+.icon {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 10px;
+
+  &::after {
+    --size: 24px;
+
+    @include square(var(--size));
+
+    content: '';
+    flex-shrink: 0;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @include laptop {
+      --size: 20;
+    }
+  }
+
+  &--arrow-right {
+    &::after {
+      background-image: url('@/assets/icons/arrow-right.svg');
+    }
+  }
+}

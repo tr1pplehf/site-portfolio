@@ -5,8 +5,28 @@
   width: 100%;
   padding-block: fluid(20, 10);
   border-bottom: 1px solid rgb(0 0 0 / 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  animation-name: scrolling-header;
+  animation-fill-mode: both;
+  animation-timeline: scroll();
+  animation-range: 0 100px;
+
+  @mixin scrolling-header-styles {
+    padding-block: 10px;
+    background-color: var(--color-primary);
+    border-color: var(--color-accent)
+  }
+
+  @keyframes scrolling-header {
+    to {
+      @include scrolling-header-styles;
+    }
+  }
+
+  @supports(not (animation-timeline: scroll())) {
+    @include scrolling-header-styles;
+
+    position: sticky !important;
+  }
 
   &__inner {
     display: flex;
@@ -21,7 +41,7 @@
       align-items: center;
       gap: 40px;
 
-      @include tablet{
+      @include tablet {
         flex-direction: column;
       }
     }
