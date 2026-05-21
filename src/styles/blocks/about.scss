@@ -29,6 +29,11 @@
       display: grid;
       justify-content: stretch;
     }
+
+    &:has(.technologies) {
+      display: grid;
+      justify-content: start;
+    }
   }
 
   &__image {
