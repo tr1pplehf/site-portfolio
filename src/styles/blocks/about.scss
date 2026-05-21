@@ -1,0 +1,51 @@
+.about {
+  &__inner {
+    display: grid;
+    row-gap: fluid(80, 40);
+  }
+
+  &__group {
+    display: grid;
+    row-gap: fluid(40, 20);
+  }
+
+  &__header {
+    &--centered {
+      text-align: center;
+    }
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    @include tablet {
+      flex-direction: column;
+    }
+
+    &:has(.skills) {
+      display: grid;
+      justify-content: stretch;
+    }
+  }
+
+  &__image {
+    width: 100%;
+
+    height: fluid(710, 290);
+    object-fit: cover;
+    border-radius: var(--border-radius-m);
+
+    @include tablet-above {
+      max-width: 710px;
+    }
+  }
+
+  &__info {
+    p:first-child {
+      color: var(--color-black);
+    }
+  }
+}
