@@ -1,0 +1,19 @@
+.banner {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+
+  &__inner {
+    display: grid;
+    row-gap: 24px;
+    text-align: center;
+  }
+
+  &__header {
+    display: grid;
+    row-gap: 10px;
+  }
+
+  &__title {
+    color: inherit;
+  }
+}
