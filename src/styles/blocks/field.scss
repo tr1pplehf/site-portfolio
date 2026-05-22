@@ -1,0 +1,36 @@
+.field {
+  display: grid;
+  row-gap: 10px;
+
+  &__label {
+    color: var(--color-black);
+  }
+
+  &__required-star {
+    color: var(--color-red-45);
+  }
+
+  &__control {
+    height: 54px;
+    padding-inline: var(--field-padding-x);
+    width: 100%;
+    border: var(--border);
+    border-radius: var(--border-radius-m);
+
+    @include hover {
+      border-color: var(--color-black-10);
+    }
+
+    &::placeholder {
+      color: var(--color-accent);
+    }
+  }
+
+  textarea.field__control {
+    padding-block: fluid-to-laptop(20, 16);
+    min-height: fluid(163, 109);
+    resize: vertical;
+  }
+
+
+}
