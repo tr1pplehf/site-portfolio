@@ -1,0 +1,31 @@
+.experience {
+  width: 100%;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  &__card {
+    display: grid;
+    row-gap: 40px;
+    padding: 20px;
+    border: var(--border-transparent);
+    border-radius: var(--border-radius-m);
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 10px;
+    }
+
+    &-time {
+      padding: 8px;
+      border: var(--border-transparent);
+      border-radius: var(--border-radius-m);
+      color: var(--color-black);
+    }
+  }
+}
